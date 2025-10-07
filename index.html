@@ -4,80 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV – Mascret Mehdi</title>
-  <style>
-    :root{
-      --color-primary: hsl(158, 64%, 35%);
-      --color-primary-foreground: hsl(0, 0%, 100%);
-      --color-primary-light: hsl(158, 47%, 92%);
-      --color-primary-dark: hsl(158, 64%, 25%);
-      --color-secondary: hsl(45, 86%, 58%);
-      --color-secondary-foreground: hsl(222, 30%, 15%);
-      --color-accent: hsl(220, 45%, 25%);
-      --color-accent-foreground: hsl(0, 0%, 100%);
-      --color-background: hsl(60, 20%, 99%);
-      --color-foreground: hsl(222, 30%, 15%);
-      --color-border: hsl(223, 14%, 90%);
-    }
-
-    /* Base */
-    *{box-sizing:border-box;margin:0;padding:0}
-    body { background: var(--color-foreground); font:14px/1.55 Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--color-foreground); }
-
-    /* Canvas A4 */
-    .page { width: 210mm; height: 297mm; margin: 12px auto; background: #fff; box-shadow: 0 10px 22px rgba(0,0,0,.08); display: grid; grid-template-rows: auto 1fr; }
-
-    /* Header (centered with hero pattern) */
-    header{padding:14mm 16mm;background:var(--color-background);border-bottom:1px solid var(--color-border);position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
-    header .name{font-size:29px;font-weight:800;letter-spacing:.2px;color:var(--color-primary)}
-    header .title{font-size:15.5px;color:var(--color-accent);font-weight:700;margin-top:3px}
-    /* hero pattern: chevrons croisés discrets */
-    header::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;background:
-      repeating-linear-gradient(135deg, hsla(158,64%,35%,.10) 0 1px, transparent 1px 12px),
-      repeating-linear-gradient(45deg, hsla(158,64%,35%,.06) 0 1px, transparent 1px 12px),
-      linear-gradient(90deg, hsla(158,64%,35%,.05), transparent 60%);
-    }
-
-    /* Two-column layout */
-    .content { display:grid; grid-template-columns: 35% 65%; }
-    aside { background: var(--color-background); padding: 10mm 24mm 10mm 8mm; border-right: 1px solid var(--color-border); display:flex; flex-direction:column; gap:9mm }
-    main { padding: 12mm 16mm; display:flex; flex-direction:column; gap:9mm }
-
-    /* Typography */
-    h3 { color: var(--color-primary); font-size: 12.6px; text-transform: uppercase; letter-spacing: .18em; margin-bottom:6px }
-    h4 { color: var(--color-accent); font-size: 14px; margin-bottom: 2px }
-    p { margin-bottom:6px }
-    .rule { height:1px; background: var(--color-border); margin:6px 0 10px }
-
-    /* Chips & badges */
-    .chips{display:flex;flex-wrap:wrap;gap:6px}
-    .chip{background:var(--color-primary-light);border:1px solid var(--color-primary);border-radius:999px;padding:5px 10px;font-size:12.4px;color:var(--color-primary-dark)}
-    .badge{background:none;color:var(--color-primary);border:none;font-weight:700;font-size:12.2px;padding:0;border-radius:0;display:inline-block;margin-top:6px}
-
-    /* Lists */
-    .list{list-style:none;margin-top:4px}
-    .list li{margin:4px 0}
-
-    /* Contact icons */
-    .contact .item{display:flex;align-items:center;gap:8px;margin:6px 0}
-    .icon{width:14px;height:14px;display:inline-flex;align-items:center;justify-content:center}
-    .icon svg{width:14px;height:14px;fill:none;stroke:var(--color-primary);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-    .brand svg{fill:var(--color-primary);stroke:none}
-
-    /* Education separators */
-    .edu li + li{border-top:1px solid var(--color-border);margin-top:8px;padding-top:8px}
-
-    /* Experience */
-    .xp{margin-bottom:8mm}
-    .xp .meta{font-size:12.3px;color:#6b7280;margin-bottom:4px}
-    .xp ul{margin-left:18px}
-    .xp li{margin:3px 0}
-    .stack{font-size:12.2px;color:#475569;margin-top:2px}
-
-    /* Print */
-    @page{size:A4;margin:0}
-    @media print{body{background:#fff}.page{box-shadow:none;margin:0}}
-    a{color:var(--color-accent);text-decoration:none; font-weight:600;}
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="page">
@@ -125,7 +52,7 @@
                   <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM6.834 20.452H3.837V9h2.997v11.452zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zM20.447 20.452h-3.554V14.84c0-1.339-.027-3.065-1.868-3.065-1.868 0-2.154 1.46-2.154 2.968v5.709H9.317V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.6 0 4.268 2.37 4.268 5.455v6.286z"/>
                 </svg>
               </span>
-              <a href="https://www.linkedin.com/in/mehdimascret">Mehdi Mascret</a>
+              <a href="https://www.linkedin.com/in/MehdiMascret">linkedin.com/in/MehdiMascret</a>
             </li>
             <li class="item">
               <span class="icon brand">
@@ -134,7 +61,15 @@
                   <path d="M15.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                 </svg>
               </span>
-              <a>tryhackme.com/p/mehdi</a>
+              <a>tryhackme.com/p/MehdiMascret</a>
+            </li>
+            <li class="item">
+              <span class="icon brand">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2c-4.97 0-9 3.58-9 8 0 2.62 1.42 4.93 3.59 6.29L7 18v2a2 2 0 002 2h6a2 2 0 002-2v-2l.41-1.71C19.58 14.93 21 12.62 21 10c0-4.42-4.03-8-9-8zm-3 9a2 2 0 110-4 2 2 0 010 4zm6 0a2 2 0 110-4 2 2 0 010 4z"/>
+                </svg>
+              </span>
+              <a>root-me.org/Mehdi-Mascret</a>
             </li>
           </ul>
         </section>
@@ -143,13 +78,14 @@
           <h3>Formations</h3>
           <div class="rule"></div>
           <ul class="list edu">
-            <li><strong>MS-SIS – Sécurité des SI (Bac+6)</strong><br><span class="muted">ESIEA — 2025–2026</span><br><span class="badge">Mention Très Bien – Major de promotion</span></li>
+            <!-- <li><strong>MS-SIS – Sécurité des SI (Bac+6)</strong><br><span class="muted">ESIEA — 2025–2026</span><br><span class="badge">Mention Très Bien – Major de promotion</span></li> -->
             <li><strong>Master Ingénierie Informatique</strong><br><span class="muted">ESIEA — 2016–2021</span><br><span class="badge">TOEIC : 835 – Niveau B2+ (Anglais professionnel)</span></li>
           </ul>
         </section>
 
+        <div class="separator"></div>
         <section>
-          <h3>Compétences techniques</h3>
+          <h3 style="font-size: 11.6px;">Compétences techniques</h3>
           <div class="rule"></div>
           <div class="chips">
             <span class="chip">Pentest Web</span>
@@ -169,7 +105,9 @@
         <section>
           <h3>Profil</h3>
           <div class="rule"></div>
-          <p>Développeur fullstack orienté sécurité offensive. J’allie architecture logicielle, automatisation (CI/CD) et DevSecOps pour bâtir et éprouver des systèmes robustes. Approche <em>builder/breaker</em> : identifier les failles, renforcer les défenses et accélérer la livraison sécurisée.</p>
+          <p>Développeur full-stack passionné, actuellement en MS·SIS, avec un intérêt marqué pour le pentest et les exploits zero-day.
+            Solide expérience en développement, accompagnement technique d'équipes, en correction de bugs, et en amélioration de la qualité du code.
+            Autonome, curieux et rigoureux, je souhaite mettre mes compétences techniques au service de la cybersécurité offensive et du hacking éthique.</p>
         </section>
 
         <section>
