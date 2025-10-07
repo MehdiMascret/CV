@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV – Mascret Mehdi</title>
+  <style>
+    :root{
+      --color-primary: hsl(158, 64%, 35%);
+      --color-primary-foreground: hsl(0, 0%, 100%);
+      --color-primary-light: hsl(158, 47%, 92%);
+      --color-primary-dark: hsl(158, 64%, 25%);
+      --color-secondary: hsl(45, 86%, 58%);
+      --color-secondary-foreground: hsl(222, 30%, 15%);
+      --color-accent: hsl(220, 45%, 25%);
+      --color-accent-foreground: hsl(0, 0%, 100%);
+      --color-background: hsl(60, 20%, 99%);
+      --color-foreground: hsl(222, 30%, 15%);
+      --color-border: hsl(223, 14%, 90%);
+    }
+
+    /* Base */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body { background: var(--color-foreground); font:14px/1.55 Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--color-foreground); }
+
+    /* Canvas A4 */
+    .page { width: 210mm; height: 297mm; margin: 12px auto; background: #fff; box-shadow: 0 10px 22px rgba(0,0,0,.08); display: grid; grid-template-rows: auto 1fr; }
+
+    /* Header (centered with hero pattern) */
+    header{padding:14mm 16mm;background:var(--color-background);border-bottom:1px solid var(--color-border);position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+    header .name{font-size:29px;font-weight:800;letter-spacing:.2px;color:var(--color-primary)}
+    header .title{font-size:15.5px;color:var(--color-accent);font-weight:700;margin-top:3px}
+    /* hero pattern: chevrons croisés discrets */
+    header::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;background:
+      repeating-linear-gradient(135deg, hsla(158,64%,35%,.10) 0 1px, transparent 1px 12px),
+      repeating-linear-gradient(45deg, hsla(158,64%,35%,.06) 0 1px, transparent 1px 12px),
+      linear-gradient(90deg, hsla(158,64%,35%,.05), transparent 60%);
+    }
+
+    /* Two-column layout */
+    .content { display:grid; grid-template-columns: 35% 65%; }
+    aside { background: var(--color-background); padding: 10mm 24mm 10mm 8mm; border-right: 1px solid var(--color-border); display:flex; flex-direction:column; gap:9mm }
+    main { padding: 12mm 16mm; display:flex; flex-direction:column; gap:9mm }
+
+    /* Typography */
+    h3 { color: var(--color-primary); font-size: 12.6px; text-transform: uppercase; letter-spacing: .18em; margin-bottom:6px }
+    h4 { color: var(--color-accent); font-size: 14px; margin-bottom: 2px }
+    p { margin-bottom:6px }
+    .rule { height:1px; background: var(--color-border); margin:6px 0 10px }
+
+    /* Chips & badges */
+    .chips{display:flex;flex-wrap:wrap;gap:6px}
+    .chip{background:var(--color-primary-light);border:1px solid var(--color-primary);border-radius:999px;padding:5px 10px;font-size:12.4px;color:var(--color-primary-dark)}
+    .badge{background:none;color:var(--color-primary);border:none;font-weight:700;font-size:12.2px;padding:0;border-radius:0;display:inline-block;margin-top:6px}
+
+    /* Lists */
+    .list{list-style:none;margin-top:4px}
+    .list li{margin:4px 0}
+
+    /* Contact icons */
+    .contact .item{display:flex;align-items:center;gap:8px;margin:6px 0}
+    .icon{width:14px;height:14px;display:inline-flex;align-items:center;justify-content:center}
+    .icon svg{width:14px;height:14px;fill:none;stroke:var(--color-primary);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .brand svg{fill:var(--color-primary);stroke:none}
+
+    /* Education separators */
+    .edu li + li{border-top:1px solid var(--color-border);margin-top:8px;padding-top:8px}
+
+    /* Experience */
+    .xp{margin-bottom:8mm}
+    .xp .meta{font-size:12.3px;color:#6b7280;margin-bottom:4px}
+    .xp ul{margin-left:18px}
+    .xp li{margin:3px 0}
+    .stack{font-size:12.2px;color:#475569;margin-top:2px}
+
+    /* Print */
+    @page{size:A4;margin:0}
+    @media print{body{background:#fff}.page{box-shadow:none;margin:0}}
+    a{color:var(--color-accent);text-decoration:none; font-weight:600;}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="name">MEHDI MASCRET</div>
+      <div class="title">Stage en cybersécurité · MS-SIS</div>
+    </header>
+
+    <div class="content">
+      <!-- Left column -->
+      <aside>
+        <section>
+          <h3>Contact</h3>
+          <div class="rule"></div>
+          <ul class="list contact">
+            <li class="item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-6.75 8-12a8 8 0 10-16 0c0 5.25 8 12 8 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <a>Paris, France</a>
+            </li>
+            <li class="item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6l8 6 8-6"/><rect x="4" y="6" width="16" height="12" rx="2"/></svg>
+              </span>
+              <a href="mailto:mehdi@mascret.dev">mehdi@mascret.dev</a>
+            </li>
+            <li class="item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v2a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.18 2 2 0 014.11 2h2a2 2 0 012 1.72c.12.9.33 1.77.64 2.6a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.48-1.21a2 2 0 012.11-.45c.83.31 1.7.52 2.6.64A2 2 0 0122 16.92z"/></svg>
+              </span>
+              <a href="tel:+33695586398">+33 6 95 58 63 98</a>
+            </li>
+            <li class="item">
+              <span class="icon brand">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 .5a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58l-.02-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.35-1.75-1.35-1.75-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.86 2.84 1.32 3.53 1.01.11-.78.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22l-.01 3.29c0 .32.22.69.83.57A12 12 0 0012 .5z"/>
+                </svg>
+              </span>
+              <a href="https://github.com/MehdiMascret">github.com/MehdiMascret</a>
+            </li>
+            <li class="item">
+              <span class="icon brand">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM6.834 20.452H3.837V9h2.997v11.452zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zM20.447 20.452h-3.554V14.84c0-1.339-.027-3.065-1.868-3.065-1.868 0-2.154 1.46-2.154 2.968v5.709H9.317V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.6 0 4.268 2.37 4.268 5.455v6.286z"/>
+                </svg>
+              </span>
+              <a href="https://www.linkedin.com/in/mehdimascret">Mehdi Mascret</a>
+            </li>
+            <li class="item">
+              <span class="icon brand">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 18a5 5 0 010-10 7 7 0 1110.7 6.2A3.5 3.5 0 1017 18H7z"/>
+                  <path d="M15.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                </svg>
+              </span>
+              <a>tryhackme.com/p/mehdi</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Formations</h3>
+          <div class="rule"></div>
+          <ul class="list edu">
+            <li><strong>MS-SIS – Sécurité des SI (Bac+6)</strong><br><span class="muted">ESIEA — 2025–2026</span><br><span class="badge">Mention Très Bien – Major de promotion</span></li>
+            <li><strong>Master Ingénierie Informatique</strong><br><span class="muted">ESIEA — 2016–2021</span><br><span class="badge">TOEIC : 835 – Niveau B2+ (Anglais professionnel)</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Compétences techniques</h3>
+          <div class="rule"></div>
+          <div class="chips">
+            <span class="chip">Pentest Web</span>
+            <span class="chip">Red Team</span>
+            <span class="chip">OSINT</span>
+            <span class="chip">Java</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">React</span>
+            <span class="chip">Docker</span>
+            <span class="chip">CI/CD</span>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Right column -->
+      <main>
+        <section>
+          <h3>Profil</h3>
+          <div class="rule"></div>
+          <p>Développeur fullstack orienté sécurité offensive. J’allie architecture logicielle, automatisation (CI/CD) et DevSecOps pour bâtir et éprouver des systèmes robustes. Approche <em>builder/breaker</em> : identifier les failles, renforcer les défenses et accélérer la livraison sécurisée.</p>
+        </section>
+
+        <section>
+          <h3>Expériences</h3>
+          <div class="rule"></div>
+
+          <article class="xp">
+            <h4>Ingénieur Fullstack — Java / React</h4>
+            <div class="meta">Capgemini (Safran Nacelles) · 2021–2024</div>
+            <ul>
+              <li>ERP de production (centaines d’utilisateurs), robustesse & performance.</li>
+              <li>CI/CD GitLab & Jenkins, déploiements automatisés, revue de code.</li>
+              <li>Sécurisation applicative : authN/Z, durcissement, gestion des risques.</li>
+            </ul>
+            <div class="stack">Java (Spring Boot), React/Next.js, PostgreSQL, RabbitMQ, Docker</div>
+          </article>
+
+          <article class="xp">
+            <h4>Ingénieur Fullstack</h4>
+            <div class="meta">AUBAY · 2021</div>
+            <ul>
+              <li>Module RH (SOA), intégrations PeopleDoc & Navision.</li>
+              <li>Tests de validation et réduction des délais de livraison.</li>
+            </ul>
+            <div class="stack">Java, Spring Boot, React/Next.js, GitLab, Docker</div>
+          </article>
+
+          <article class="xp">
+            <h4>Ingénieur Fullstack</h4>
+            <div class="meta">ALIF · 2019–2020</div>
+            <ul>
+              <li>Plateforme e-commerce et interface 3D de gestion de stocks.</li>
+              <li>API sécurisées, optimisation des flux internes.</li>
+            </ul>
+            <div class="stack">Java, Vue.js, MariaDB, AWS, Docker, Jenkins</div>
+          </article>
+        </section>
+
+        <section>
+          <h3>Projets / Labs</h3>
+          <div class="rule"></div>
+          <ul class="list" style="list-style:disc;margin-left:18px">
+            <li>Scanner de vulnérabilités (Python + Nmap + Burp API).</li>
+            <li>Lab Red Team (AD, attaques internes, BloodHound).</li>
+            <li>CTF : TryHackMe / HackTheBox.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
