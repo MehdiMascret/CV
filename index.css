@@ -1,7 +1,7 @@
 :root {
   --color-primary: hsl(158, 64%, 35%);
   --color-primary-foreground: hsl(0, 0%, 100%);
-  --color-primary-light: lch(95.71% 4.08 169.18);
+  --color-primary-light: lch(95.71% 3 169.18);
   --color-primary-dark: hsl(158, 64%, 25%);
   --color-secondary: hsl(45, 86%, 58%);
   --color-secondary-foreground: hsl(222, 30%, 15%);
@@ -39,7 +39,7 @@ body {
 header {
   padding: 14mm 16mm;
   background: var(--color-background);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -70,7 +70,7 @@ header::before {
   background:
     repeating-linear-gradient(135deg, hsla(158, 64%, 35%, 0.15) 0 1px, transparent 1px 12px),
     repeating-linear-gradient(45deg, hsla(158, 64%, 35%, 0.30) 0 1px, transparent 1px 12px),
-    linear-gradient(90deg, hsla(158, 64%, 35%, 0.15), transparent 60%);
+    linear-gradient(90deg, transparent 0%, hsla(158, 64%, 35%, 0.25));
 }
 
 .content {
@@ -79,34 +79,34 @@ header::before {
 }
 aside {
   background: var(--color-primary-light);
-  padding: 10mm 8mm 10mm 8mm;
+  padding: 6mm 8mm;
   border-right: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
-  gap: 12mm;
+  gap: 6mm;
+  justify-content: space-between;
 }
 main {
-  padding: 12mm 16mm;
+  padding: 6mm 8mm;
   display: flex;
   flex-direction: column;
   background: var(--color-background);
-  justify-content: space-between;
   padding-bottom: 6mm;
+  gap: 6mm;
 }
 
 /* Typography */
 h3 {
   color: var(--color-primary);
-  font-size: 12.6px;
+  border-bottom: 1px var(--color-border) solid;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  margin-bottom: 6px;
   white-space: preserve nowrap;
+  padding-bottom: 1mm;
 }
 h4 {
   color: var(--color-accent);
   font-size: 14px;
-  margin-bottom: 2px;
 }
 p {
   margin-bottom: 6px;
@@ -146,10 +146,6 @@ p {
 /* Lists */
 .list {
   list-style: none;
-  margin-top: 4px;
-}
-.list li {
-  margin: 4px 0;
 }
 
 /* Contact icons */
@@ -188,9 +184,6 @@ p {
 }
 
 /* Experience */
-.xp {
-  margin-bottom: 4mm;
-}
 .xp .meta {
   font-size: 12.3px;
   color: #6b7280;
@@ -202,6 +195,9 @@ p {
 .xp li {
   margin: 3px 0;
 }
+.xp .subli {
+  margin-left: 12px;
+}
 .stack {
   font-size: 12.2px;
   color: #475569;
@@ -209,6 +205,11 @@ p {
 }
 .separator {
   flex: .5;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 3mm;
 }
 
 /* Print */
