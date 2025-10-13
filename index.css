@@ -92,6 +92,8 @@ main {
   flex-direction: column;
   gap: 9mm;
   background: var(--color-background);
+  justify-content: space-between;
+  padding-bottom: 6mm;
 }
 
 /* Typography */
