@@ -122,6 +122,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  max-width: 250px;
+  margin: auto;
 }
 .chip {
   background: var(--color-primary-light);
@@ -140,7 +142,6 @@ p {
   padding: 0;
   border-radius: 0;
   display: inline-block;
-  margin-top: 6px;
 }
 
 /* Lists */
@@ -187,7 +188,6 @@ p {
 .xp .meta {
   font-size: 12.3px;
   color: #6b7280;
-  margin-bottom: 4px;
 }
 .xp ul {
   margin-left: 18px;
