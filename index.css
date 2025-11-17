@@ -80,7 +80,7 @@ header::before {
 aside {
   background: var(--color-primary-light);
   padding: 6mm 8mm;
-  border-right: 1px solid var(--color-border);
+  border-right: 0.5mm solid var(--color-border);
   display: flex;
   flex-direction: column;
   gap: 6mm;
