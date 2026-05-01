@@ -1,7 +1,7 @@
 :root {
   --color-primary: hsl(158, 64%, 35%);
   --color-primary-foreground: hsl(0, 0%, 100%);
-  --color-primary-light: lch(95.71% 3 169.18);
+  --color-primary-light: hsl(158, 35%, 95%);
   --color-primary-dark: hsl(158, 64%, 25%);
   --color-secondary: hsl(45, 86%, 58%);
   --color-secondary-foreground: hsl(222, 30%, 15%);
@@ -232,12 +232,31 @@ section {
   margin: 0;
 }
 @media print {
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
   body {
     background: #fff;
   }
+
   .page {
     box-shadow: none;
     margin: 0;
+  }
+
+  header {
+    background: var(--color-background);
+  }
+
+  header::before {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  aside {
+    background: var(--color-primary-light);
   }
 }
 a {
