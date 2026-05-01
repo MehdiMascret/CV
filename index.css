@@ -199,9 +199,23 @@ p {
   margin-left: 12px;
 }
 .stack {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
   font-size: 12.2px;
   color: #475569;
   margin-top: 2px;
+}
+.sub-stack {
+  text-align: right;
+  padding-right: 32px;
+  white-space: nowrap;
+}
+.stack-separator {
+  margin-left: auto;
+  color: var(--color-primary);
+  font-weight: 700;
 }
 .separator {
   flex: .5;
