@@ -237,17 +237,27 @@ section {
     -webkit-print-color-adjust: exact;
   }
 
+  html,
   body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
     background: #fff;
+    overflow: hidden;
   }
 
   .page {
+    width: 210mm;
+    height: 297mm;
     box-shadow: none;
     margin: 0;
+    overflow: hidden;
   }
 
   header {
     background: var(--color-background);
+    padding: 10mm 16mm;
   }
 
   header::before {
@@ -257,6 +267,19 @@ section {
 
   aside {
     background: var(--color-primary-light);
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    gap: 4mm;
+  }
+
+  main {
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    gap: 4mm;
+  }
+
+  section {
+    gap: 2mm;
   }
 }
 a {
