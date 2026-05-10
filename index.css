@@ -96,11 +96,15 @@ main {
 }
 
 /* Typography */
+h3,
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
 h3 {
   color: var(--color-primary);
   border-bottom: 1px var(--color-border) solid;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.1em;
   white-space: preserve nowrap;
   padding-bottom: 1mm;
 }
